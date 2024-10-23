@@ -1,0 +1,113 @@
+<%- include('includes/head.ejs') %>
+<body>
+  <%- include('includes/navbar.ejs') %>
+
+  <div
+    class="container mx-auto my-5 flex justify-center items-center flex-col gap-20"
+  >
+    <h1 class="text-3xl text-center">Welcome to add hospittal</h1>
+    <form
+      action="/users/add-hospital"
+      method="post"
+      class="flex justify-center items-center flex-col w-[50%]"
+    >
+      <div class="flex gap-4 w-[100%]">
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#name" class="mb-2">Bemorning ism</label>
+          <input
+            type="text"
+            id="#ism"
+            placeholder="name"
+            name="ism"
+            class="rounded"
+          />
+        </div>
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#age" class="mb-2">Bemorning yoshi</label>
+          <input
+            type="number"
+            id="#age"
+            placeholder="age"
+            name="yosh"
+            class="rounded"
+          />
+        </div>
+      </div>
+      <div class="flex gap-4 w-[100%]">
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#tibbiy_tarix" class="mb-2">Tibbiy tarix</label>
+          <input
+            type="text"
+            id="#tibbiy_tarix"
+            placeholder="Tibbiy tarix"
+            name="tibbiy_tarix"
+            class="rounded"
+          />
+        </div>
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#telefon" class="mb-2">Telefon</label>
+          <input
+            type="number"
+            id="#telefon"
+            placeholder="telefon"
+            name="telefon"
+            class="rounded"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex gap-4 w-[100%]">
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#elektron_pochta" class="mb-2">Elektron pochta</label>
+          <input
+            type="email"
+            id="#elektron_pochta"
+            placeholder="elektron_pochta"
+            name="elektron_pochta"
+            class="rounded"
+          />
+        </div>
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#adres" class="mb-2">Address</label>
+          <input
+            type="number"
+            id="#adres"
+            placeholder="Address"
+            name="adres"
+            class="rounded"
+          />
+        </div>
+      </div>
+      <!--  -->
+      <div class="flex gap-4 w-[100%]">
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#yangilangan_at" class="mb-2">yangilangan_at</label>
+          <input
+            type="date"
+            id="#yangilangan_at"
+            placeholder="yangilangan_at"
+            name="yangilangan_at"
+            class="rounded"
+          />
+        </div>
+        <div class="flex flex-col my-2 w-[50%]">
+          <label for="#yaratilgan_at" class="mb-2">yaratilgan_at</label>
+          <input
+            type="date"
+            id="#yaratilgan_at"
+            placeholder="yaratilgan_at"
+            name="yaratilgan_at"
+            class="rounded"
+          />
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="my-2 px-5 py-2 bg-blue-500 text-white rounded"
+      >
+        Yuborish
+      </button>
+    </form>
+  </div>
+  <%- include('includes/foot.ejs') %>
+</body>

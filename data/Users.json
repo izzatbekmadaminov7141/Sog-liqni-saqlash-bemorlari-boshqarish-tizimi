@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ce99b931-e657-4779-967b-371efae87f70",
+    "ism": "izzatbek",
+    "yosh": "dasdad",
+    "contact_info": {
+      "telefon": "23123132123",
+      "elektron_pochta": "izzatbek@gmail.com",
+      "adres": "123123132",
+      "yangilangan_at": "2024-10-22",
+      "yaratilgan_at": "2024-10-22"
+    }
+  },
+  {
+    "id": "34503bf5-c457-4462-a9f4-b448fec06e8e",
+    "ism": "Ilxomjon",
+    "yosh": "kasal bo'lmagan ",
+    "contact_info": {
+      "telefon": "901234567",
+      "elektron_pochta": "ilxomjon@gmail.com",
+      "adres": "123344",
+      "yangilangan_at": "2024-10-23",
+      "yaratilgan_at": "2024-10-02"
+    }
+  }
+]
