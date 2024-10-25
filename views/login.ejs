@@ -1,0 +1,45 @@
+<%- include('includes/head.ejs') %>
+<body>
+  <%- include('includes/navbar.ejs') %>
+
+  <div class="container mx-auto my-5">
+    <form
+      action="/login"
+      method="post"
+      class="flex justify-center items-center flex-col h-[50vh]"
+    >
+      <div class="border w-[50%] rounded p-5">
+        <h1 class="text-3xl text-center">Welcome to login</h1>
+        <div class="w-[100%]">
+          <label for="username" class="mb-2">Ismingiz</label>
+          <input
+            type="text"
+            id="username"
+            name="ism"
+            class="w-[100%]"
+            placeholder="ismingizni kiriting"
+          />
+        </div>
+        <div class="w-[100%] my-2">
+          <label for="telefon" class="mb-2">Telefon</label>
+          <input
+            type="number"
+            id="telefon"
+            name="telefon"
+            placeholder="901234567"
+            class="w-[100%]"
+          />
+        </div>
+        <div class="flex justify-center">
+          <button
+            type="submit"
+            class="px-4 py-4 my-3 rounded bg-blue-500 text-white w-[50%]"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <%- include('includes/foot.ejs') %>
+</body>

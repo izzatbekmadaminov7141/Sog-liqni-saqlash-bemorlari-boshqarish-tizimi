@@ -5,7 +5,7 @@
   <div class="container mx-auto my-5">
     <h1 class="text-3xl text-center">Welcome to our website</h1>
     <div class="flex justify-between gap-20">
-      <%= if(users.length > 0) { %>
+      <% if (users.length > 0) { %> <% users.forEach(function(user) { %>
       <div class="border w-[20%] rounded p-1">
         <img
           src="https://icons.veryicon.com/png/o/healthcate-medical/medical-icon/male-doctor.png"
@@ -13,23 +13,22 @@
           class="w-[100%]"
         />
         <div class="p-4">
-          <h1 class="text-[40px]">Tish og'rig'i</h1>
-          <h4 class="text-[20px]">Doctor Jalolldin</h4>
+          <h1 class="text-[40px]"><%= user.job %></h1>
+          <h4 class="text-[20px]"><%= user.name %></h4>
           <div class="my-4 w-[100%]">
             <a
-              href=""
+              href="/login"
               class="px-4 py-2 rounded bg-blue-500 text-white w-[100%] text-center block"
-              >Qabulga yozilish</a
             >
+              Qabulga yozilish
+            </a>
           </div>
         </div>
       </div>
-      <%= } else {%>
+      <% }) %> <% } else { %>
       <p>Malumotlar topilmadi ...</p>
-
-      <%= } %>
+      <% } %>
     </div>
   </div>
-
   <%- include('includes/foot.ejs') %>
 </body>
